@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Expert Tech Tutors in Hyderabad - Learn Programming, AI, Data Science, Web Development from Industry Professionals. Home tutoring services across Hitech City, Gachibowli, Banjara Hills.">
+    <meta name="keywords" content="tech tutors hyderabad, programming tutors, web development, AI tutoring, data science, python programming, software engineering, hitech city tutors">
+    <meta name="author" content="Expert Tutors Hyderabad">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Expert Tech Tutors Hyderabad - Master Future Skills">
+    <meta property="og:description" content="Learn cutting-edge technologies from industry experts. Programming, AI, Data Science, Web Development tutoring at your home.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://experttutorshyderabad.com">
+    <meta property="og:image" content="/images/og-image.jpg">
+    <meta property="og:site_name" content="Expert Tutors Hyderabad">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Expert Tech Tutors Hyderabad">
+    <meta name="twitter:description" content="Master future tech skills with industry expert tutors in Hyderabad">
+    <meta name="twitter:image" content="/images/twitter-card.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    
+    <!-- Page Title -->
+    <title><%= typeof title !== 'undefined' ? title + ' | Expert Tutors Hyderabad' : 'Expert Tech Tutors Hyderabad - Master Future Skills with Industry Professionals' %></title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha512-t4GWSVZO1eC8BM339Xd7Uphw5s17a86tIZIj8qRxhnKub6WoyhnrxeCIMeAqBPgdZGlCcG2PrZjMc+Wr78+5Xg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <!-- AOS (Animate On Scroll) CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <!-- Swiper CSS (for testimonial slider) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.css" integrity="sha512-f7Ap8oREL5d/0N+TuD47nGhtb7SK6kNbOxE+6Wf4gOWw+/s9Y8HXF42vJBIBQb5WwuMp7RHGx0/cDk5j5Y7nrg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <!-- Additional Page-Specific CSS -->
+    <% if (typeof additionalCSS !== 'undefined') { %>
+        <% additionalCSS.forEach(function(cssFile) { %>
+            <link rel="stylesheet" href="<%= cssFile %>">
+        <% }); %>
+    <% } %>
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "EducationalOrganization",
+        "name": "Expert Tutors Hyderabad",
+        "description": "Premier technology tutoring services in Hyderabad offering programming, AI, data science, and web development courses",
+        "url": "https://experttutorshyderabad.com",
+        "telephone": "+91-9876543210",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Hitech City",
+            "addressLocality": "Hyderabad",
+            "addressRegion": "Telangana",
+            "postalCode": "500081",
+            "addressCountry": "IN"
+        },
+        "areaServed": [
+            "Hitech City", "Gachibowli", "Madhapur", "Banjara Hills", 
+            "Jubilee Hills", "Secunderabad", "Begumpet", "Ameerpet"
+        ],
+        "serviceType": [
+            "Web Development Tutoring",
+            "Python Programming",
+            "AI and Machine Learning",
+            "Data Science Training",
+            "Mobile App Development",
+            "Software Engineering"
+        ],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.7",
+            "reviewCount": "4523"
+        }
+    }
+    </script>
+    
+    <!-- Google Analytics (replace with your tracking ID) -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script> -->
+    <script>
+        // window.dataLayer = window.dataLayer || [];
+        // function gtag(){dataLayer.push(arguments);}
+        // gtag('js', new Date());
+        // gtag('config', 'GA_TRACKING_ID');
+    </script>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-content">
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+            <p>Loading Expert Tech Tutors...</p>
+        </div>
+    </div>
+    
+    <!-- Skip to Content (Accessibility) -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Header/Navigation -->
+    <%- include('../partials/header') %>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Page Content -->
+        <%- body %>
+    </main>
+    
+    <!-- Footer -->
+    <%- include('../partials/footer') %>
+    
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+    
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="cookie-content">
+            <div class="cookie-text">
+                <p>We use cookies to enhance your experience and analyze our website traffic. By continuing to use our site, you consent to our use of cookies.</p>
+            </div>
+            <div class="cookie-buttons">
+                <button id="accept-cookies" class="btn btn-saffron btn-sm">Accept</button>
+                <button id="decline-cookies" class="btn btn-outline-secondary btn-sm">Decline</button>
+                <a href="/privacy-policy" class="cookie-link">Privacy Policy</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/919876543210?text=Hi%20Expert%20Tutors%20Hyderabad!%20I'm%20interested%20in%20learning%20about%20your%20tech%20tutoring%20services." 
+       class="whatsapp-float" 
+       target="_blank" 
+       aria-label="Contact us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <!-- Call Button (Mobile) -->
+    <a href="tel:+919876543210" class="call-float d-md-none" aria-label="Call us">
+        <i class="fas fa-phone"></i>
+    </a>
+    
+    <!-- JavaScript Libraries -->
+    
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js" integrity="sha512-VK2zcvntEufaimc+efOYi622VN5ZacdnufnmX7zIhCPmjhKnOi9ZDMtg1/ug5l183f19gG1/cBstPO4y8Km73g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- AOS (Animate On Scroll) JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- Swiper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.js" integrity="sha512-pY1t/ADgTwbfGbw0+mRGn8bPZpG+7JK7VnzrFpUG8LsqK4b7+UFj6N5UTb6WYOkQiHgxZCPP7KAb2kGWWHhQFA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- EmailJS (for contact form) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/emailjs-com/3.2.0/email.min.js" integrity="sha512-0zYQN0x8KLMCEOHxUlhRKwQiG5z8gcWXq5DjHKEpOr5nEzIkLnE7Qk3RHFNH3o3pHGnG6kxnfOhp56rSPHx9J8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="/js/main.js"></script>
+    
+    <!-- Additional Page-Specific JavaScript -->
+    <% if (typeof additionalJS !== 'undefined') { %>
+        <% additionalJS.forEach(function(jsFile) { %>
+            <script src="<%= jsFile %>"></script>
+        <% }); %>
+    <% } %>
+    
+    <!-- Initialize Scripts -->
+    <script>
+        // Initialize AOS (Animate On Scroll)
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 100
+        });
+        
+        // Initialize EmailJS (replace with your public key)
+        // emailjs.init("YOUR_PUBLIC_KEY");
+        
+        // Page Load Performance
+        window.addEventListener('load', function() {
+            // Hide preloader
+            document.getElementById('preloader').style.display = 'none';
+            
+            // Add loaded class to body
+            document.body.classList.add('loaded');
+        });
+    </script>
+    
+    <!-- Schema Markup for FAQ (if FAQ page) -->
+    <% if (typeof faqSchema !== 'undefined') { %>
+        <script type="application/ld+json">
+            <%= JSON.stringify(faqSchema) %>
+        </script>
+    <% } %>
+    
+    <!-- Page-Specific Schema -->
+    <% if (typeof pageSchema !== 'undefined') { %>
+        <script type="application/ld+json">
+            <%= JSON.stringify(pageSchema) %>
+        </script>
+    <% } %>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Expert Tutors Hyderabad - Professional home tutoring services across Hyderabad. O-Levels, A-Levels, Cambridge, Matric and more.">
+    <meta name="keywords" content="tutors hyderabad, home tutoring, O levels, A levels, cambridge, matric, coaching">
+    <meta name="author" content="Expert Tutors Hyderabad">
+    
+    <title><%= title || 'Expert Tutors Hyderabad' %></title> -->
+    
+    <!-- Favicon -->
+    <!-- <link rel="icon" type="image/x-icon" href="/images/favicon.ico"> -->
+    
+    <!-- Bootstrap CSS -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet"> -->
+    
+    <!-- Font Awesome -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"> -->
+    
+    <!-- Google Fonts -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"> -->
+    
+    <!-- Custom CSS -->
+    <!-- <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+     -->
+    <!-- Custom Saffron Color Variables -->
+    <!-- <style>
+        :root {
+            --primary-saffron: #ff9933;
+            --light-saffron: #ffb366;
+            --pale-saffron: #fff4e6;
+            --deep-blue: #1e40af;
+            --white: #ffffff;
+            --dark-gray: #2d3748;
+            --light-gray: #f7fafc;
+        }
+    </style>
+</head>
+<body> -->
+    <!-- Header -->
+    <!-- <%- include('../partials/header') %> -->
+    
+    <!-- Navigation -->
+    <!-- <%- include('../partials/navbar') %> -->
+    
+    <!-- Main Content -->
+    <!-- <main class="main-content">
+        <%- body %>
+    </main> -->
+    
+    <!-- Footer -->
+    <!-- <%- include('../partials/footer') %> -->
+    
+    <!-- WhatsApp Floating Button -->
+    <!-- <div class="whatsapp-float">
+        <a href="https://wa.me/+923001234567" target="_blank" class="whatsapp-button">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div> -->
+    
+    <!-- Back to Top Button -->
+    <!-- <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button> -->
+    
+    <!-- Bootstrap JS -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script> -->
+    
+    <!-- jQuery (for compatibility) -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+    
+    <!-- Custom JavaScript -->
+    <!-- <script src="/js/main.js"></script>
+    <script src="/js/search.js"></script>
+     -->
+    <!-- Additional page-specific scripts -->
+    <!-- <% if (typeof scripts !== 'undefined') { %>
+        <% scripts.forEach(function(script) { %>
+            <script src="<%= script %>"></script>
+        <% }); %>
+    <% } %>
+</body>
+</html> -->

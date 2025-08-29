@@ -1,0 +1,707 @@
+<%- include('../layouts/main', { 
+  title: 'Contact Us - Expert Tech Tutors Hyderabad',
+  page: 'contact'
+}) %>
+
+<!-- Contact Hero Section -->
+<section class="contact-hero">
+  <div class="container">
+    <div class="hero-content">
+      <h1>Get Started with <span class="saffron-text">Tech Learning</span></h1>
+      <p>Ready to master programming and technology? Let's find you the perfect tech tutor in Hyderabad.</p>
+      <div class="contact-stats">
+        <div class="stat-item">
+          <span class="stat-number">500+</span>
+          <span class="stat-label">Tech Experts</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">24/7</span>
+          <span class="stat-label">Support</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">95%</span>
+          <span class="stat-label">Success Rate</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Form Section -->
+<section class="contact-form-section">
+  <div class="container">
+    <div class="contact-wrapper">
+      <!-- Contact Form -->
+      <div class="contact-form-container">
+        <div class="form-header">
+          <h2>Request a <span class="saffron-text">Tech Tutor</span></h2>
+          <p>Fill out the form below and we'll match you with the perfect programming tutor within 24 hours.</p>
+        </div>
+
+        <form class="contact-form" id="contactForm" action="/contact" method="POST">
+          <!-- Student Information -->
+          <div class="form-section">
+            <h3><i class="icon">👤</i> Student Information</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="studentName">Student Name *</label>
+                <input type="text" id="studentName" name="studentName" required>
+              </div>
+              <div class="form-group">
+                <label for="parentName">Parent/Guardian Name</label>
+                <input type="text" id="parentName" name="parentName">
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="age">Student Age</label>
+              <select id="age" name="age">
+                <option value="">Select Age Group</option>
+                <option value="10-14">10-14 years (Beginner Level)</option>
+                <option value="15-18">15-18 years (High School)</option>
+                <option value="18-22">18-22 years (College/University)</option>
+                <option value="22+">22+ years (Working Professional)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Tech Subjects -->
+          <div class="form-section">
+            <h3><i class="icon">💻</i> Programming & Tech Subjects</h3>
+            <div class="subjects-grid">
+              <label class="subject-checkbox">
+                <input type="checkbox" name="subjects" value="Python">
+                <span class="checkmark"></span>
+                <span class="subject-name">Python Programming</span>
+              </label>
+              
+              <label class="subject-checkbox">
+                <input type="checkbox" name="subjects" value="JavaScript">
+                <span class="checkmark"></span>
+                <span class="subject-name">JavaScript & Web Dev</span>
+              </label>
+              
+              <label class="subject-checkbox">
+                <input type="checkbox" name="subjects" value="Java">
+                <span class="checkmark"></span>
+                <span class="subject-name">Java Programming</span>
+              </label>
+              
+              <label class="subject-checkbox">
+                <input type="checkbox" name="subjects" value="C++">
+                <span class="checkmark"></span>
+                <span class="subject-name">C++ Programming</span>
+              </label>
+              
+              <label class="subject-checkbox">
+                <input type="checkbox" name="subjects" value="React">
+                <span class="checkmark"></span>
+                <span class="subject-name">React Development</span>
+              </label>
+              
+              <label class="subject-checkbox">
+                <input type="checkbox" name="subjects" value="Node.js">
+                <span class="checkmark"></span>
+                <span class="subject-name">Node.js & Backend</span>
+              </label>
+              
+              <label class="subject-checkbox">
+                <input type="checkbox" name="subjects" value="Data Science">
+                <span class="checkmark"></span>
+                <span class="subject-name">Data Science & ML</span>
+              </label>
+              
+              <label class="subject-checkbox">
+                <input type="checkbox" name="subjects" value="Mobile Apps">
+                <span class="checkmark"></span>
+                <span class="subject-name">Mobile App Development</span>
+              </label>
+              
+              <label class="subject-checkbox">
+                <input type="checkbox" name="subjects" value="DSA">
+                <span class="checkmark"></span>
+                <span class="subject-name">Data Structures & Algorithms</span>
+              </label>
+              
+              <label class="subject-checkbox">
+                <input type="checkbox" name="subjects" value="Databases">
+                <span class="checkmark"></span>
+                <span class="subject-name">Database Management</span>
+              </label>
+              
+              <label class="subject-checkbox">
+                <input type="checkbox" name="subjects" value="AI">
+                <span class="checkmark"></span>
+                <span class="subject-name">Artificial Intelligence</span>
+              </label>
+              
+              <label class="subject-checkbox">
+                <input type="checkbox" name="subjects" value="Cloud">
+                <span class="checkmark"></span>
+                <span class="subject-name">Cloud Computing (AWS/Azure)</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Learning Goals -->
+          <div class="form-section">
+            <h3><i class="icon">🎯</i> Learning Goals</h3>
+            <div class="form-group">
+              <label for="learningGoal">What do you want to achieve?</label>
+              <select id="learningGoal" name="learningGoal" required>
+                <option value="">Select Your Goal</option>
+                <option value="beginner">Learn Programming from Scratch</option>
+                <option value="school-project">Complete School/College Projects</option>
+                <option value="job-prep">Prepare for Tech Job Interviews</option>
+                <option value="career-switch">Career Change to Tech</option>
+                <option value="skill-upgrade">Upgrade Technical Skills</option>
+                <option value="certification">Certification Preparation</option>
+                <option value="portfolio">Build Portfolio Projects</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Location & Preferences -->
+          <div class="form-section">
+            <h3><i class="icon">📍</i> Location & Preferences</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="area">Your Area in Hyderabad *</label>
+                <select id="area" name="area" required>
+                  <option value="">Select Your Area</option>
+                  <option value="Hitech City">Hitech City</option>
+                  <option value="Gachibowli">Gachibowli</option>
+                  <option value="Madhapur">Madhapur</option>
+                  <option value="Banjara Hills">Banjara Hills</option>
+                  <option value="Jubilee Hills">Jubilee Hills</option>
+                  <option value="Kondapur">Kondapur</option>
+                  <option value="Miyapur">Miyapur</option>
+                  <option value="Kukatpally">Kukatpally</option>
+                  <option value="Ameerpet">Ameerpet</option>
+                  <option value="Somajiguda">Somajiguda</option>
+                  <option value="Begumpet">Begumpet</option>
+                  <option value="Secunderabad">Secunderabad</option>
+                  <option value="Other">Other Area</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="tutorGender">Tutor Preference</label>
+                <select id="tutorGender" name="tutorGender">
+                  <option value="">No Preference</option>
+                  <option value="male">Male Tutor</option>
+                  <option value="female">Female Tutor</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="sessionType">Session Type</label>
+                <select id="sessionType" name="sessionType">
+                  <option value="home">Home Tutoring</option>
+                  <option value="online">Online Sessions</option>
+                  <option value="both">Both Options</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="budget">Budget Range (per hour)</label>
+                <select id="budget" name="budget">
+                  <option value="">Select Budget</option>
+                  <option value="500-800">₹500 - ₹800</option>
+                  <option value="800-1200">₹800 - ₹1,200</option>
+                  <option value="1200-1800">₹1,200 - ₹1,800</option>
+                  <option value="1800+">₹1,800+</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Additional Information -->
+          <div class="form-section">
+            <h3><i class="icon">📝</i> Additional Information</h3>
+            <div class="form-group">
+              <label for="experience">Current Programming Experience</label>
+              <select id="experience" name="experience">
+                <option value="complete-beginner">Complete Beginner</option>
+                <option value="some-basics">Know Some Basics</option>
+                <option value="intermediate">Intermediate Level</option>
+                <option value="advanced">Advanced (Need Specialized Help)</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Special Requirements or Questions</label>
+              <textarea id="message" name="message" rows="4" placeholder="Tell us about any specific requirements, project deadlines, or questions you have..."></textarea>
+            </div>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="form-submit">
+            <button type="submit" class="submit-btn">
+              <span class="btn-text">Find My Tech Tutor</span>
+              <span class="btn-icon">🚀</span>
+            </button>
+            <p class="form-note">We'll contact you within 2 hours with suitable tutor matches!</p>
+          </div>
+        </form>
+      </div>
+
+      <!-- Contact Info Sidebar -->
+      <div class="contact-info">
+        <div class="contact-card">
+          <h3>Quick Contact</h3>
+          
+          <div class="contact-item">
+            <div class="contact-icon">📱</div>
+            <div class="contact-details">
+              <span class="contact-label">WhatsApp</span>
+              <a href="https://wa.me/919876543210" class="contact-value">+91 98765 43210</a>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div class="contact-details">
+              <span class="contact-label">Phone</span>
+              <a href="tel:+919876543210" class="contact-value">+91 98765 43210</a>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">✉️</div>
+            <div class="contact-details">
+              <span class="contact-label">Email</span>
+              <a href="mailto:info@experttechtutor.com" class="contact-value">info@experttechtutor.com</a>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">⏰</div>
+            <div class="contact-details">
+              <span class="contact-label">Hours</span>
+              <span class="contact-value">24/7 Support Available</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <h3>Popular Tech Areas</h3>
+          <div class="tech-areas">
+            <span class="tech-tag">🐍 Python</span>
+            <span class="tech-tag">🌐 Web Development</span>
+            <span class="tech-tag">📱 Mobile Apps</span>
+            <span class="tech-tag">🤖 AI & ML</span>
+            <span class="tech-tag">☁️ Cloud Computing</span>
+            <span class="tech-tag">📊 Data Science</span>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <h3>Why Choose Us?</h3>
+          <ul class="benefits-list">
+            <li>✅ 500+ Expert Tech Tutors</li>
+            <li>✅ Project-Based Learning</li>
+            <li>✅ Interview Preparation</li>
+            <li>✅ Portfolio Building</li>
+            <li>✅ 24/7 Support</li>
+            <li>✅ Flexible Scheduling</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq-section">
+  <div class="container">
+    <h2>Frequently Asked <span class="saffron-text">Questions</span></h2>
+    <div class="faq-grid">
+      <div class="faq-item">
+        <div class="faq-question">How quickly can I get a tech tutor?</div>
+        <div class="faq-answer">We typically match you with suitable tutors within 2-4 hours. You can start learning as early as tomorrow!</div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">Do you offer online programming sessions?</div>
+        <div class="faq-answer">Yes! We offer both in-person and online tutoring with screen sharing, live coding, and project collaboration tools.</div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">What if I'm a complete beginner?</div>
+        <div class="faq-answer">Perfect! Our tutors specialize in teaching complete beginners. We'll start from the very basics and build up your skills step by step.</div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">Can you help with job interview preparation?</div>
+        <div class="faq-answer">Absolutely! We offer specialized coding interview prep, resume building, and portfolio development services.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+/* Contact Page Specific Styles */
+.contact-hero {
+  background: linear-gradient(135deg, #f8fafc 0%, #fff4e6 100%);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  color: var(--primary-blue);
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: var(--text-gray);
+  margin-bottom: 2rem;
+}
+
+.contact-stats {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--saffron-accent);
+}
+
+.stat-label {
+  color: var(--primary-blue);
+  font-weight: 600;
+}
+
+.contact-form-section {
+  padding: 4rem 0;
+}
+
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
+}
+
+.contact-form-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.form-header h2 {
+  font-size: 2rem;
+  color: var(--primary-blue);
+  margin-bottom: 0.5rem;
+}
+
+.form-section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border: 2px solid #f1f5f9;
+  border-radius: 10px;
+}
+
+.form-section h3 {
+  color: var(--primary-blue);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icon {
+  font-size: 1.2rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--saffron-accent);
+}
+
+.subjects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 0.8rem;
+}
+
+.subject-checkbox {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.subject-checkbox:hover {
+  border-color: var(--saffron-accent);
+  background-color: #fff4e6;
+}
+
+.subject-checkbox input {
+  margin-right: 0.8rem;
+}
+
+.subject-checkbox input:checked + .checkmark + .subject-name {
+  color: var(--saffron-accent);
+  font-weight: bold;
+}
+
+.submit-btn {
+  background: linear-gradient(135deg, var(--saffron-accent) 0%, #ffb366 100%);
+  color: white;
+  padding: 1.2rem 2rem;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  box-shadow: 0 4px 15px rgba(255, 153, 51, 0.3);
+}
+
+.submit-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(255, 153, 51, 0.4);
+}
+
+.form-note {
+  text-align: center;
+  margin-top: 1rem;
+  color: var(--text-gray);
+  font-size: 0.9rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.contact-card h3 {
+  color: var(--primary-blue);
+  margin-bottom: 1rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.contact-icon {
+  font-size: 1.5rem;
+  width: 40px;
+  text-align: center;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-label {
+  font-size: 0.8rem;
+  color: var(--text-gray);
+  text-transform: uppercase;
+}
+
+.contact-value {
+  color: var(--primary-blue);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact-value:hover {
+  color: var(--saffron-accent);
+}
+
+.tech-areas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-tag {
+  background: var(--saffron-pale);
+  color: var(--primary-blue);
+  padding: 0.4rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.benefits-list {
+  list-style: none;
+  padding: 0;
+}
+
+.benefits-list li {
+  margin-bottom: 0.5rem;
+  color: var(--text-dark);
+}
+
+.faq-section {
+  background-color: var(--light-gray);
+  padding: 4rem 0;
+}
+
+.faq-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--primary-blue);
+  margin-bottom: 3rem;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.faq-item {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.faq-question {
+  font-weight: bold;
+  color: var(--primary-blue);
+  margin-bottom: 0.5rem;
+}
+
+.faq-answer {
+  color: var(--text-gray);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .subjects-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-stats {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+}
+</style>
+
+<script>
+// Form validation and enhancement
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('contactForm');
+    const subjectCheckboxes = document.querySelectorAll('input[name="subjects"]');
+    
+    // Ensure at least one subject is selected
+    form.addEventListener('submit', function(e) {
+        const checkedSubjects = document.querySelectorAll('input[name="subjects"]:checked');
+        if (checkedSubjects.length === 0) {
+            e.preventDefault();
+            alert('Please select at least one tech subject you want to learn.');
+            return;
+        }
+    });
+    
+    // Dynamic form behavior
+    const experienceSelect = document.getElementById('experience');
+    const budgetSelect = document.getElementById('budget');
+    
+    experienceSelect.addEventListener('change', function() {
+        // Suggest appropriate budget based on experience level
+        if (this.value === 'complete-beginner') {
+            budgetSelect.value = '500-800';
+        } else if (this.value === 'advanced') {
+            budgetSelect.value = '1800+';
+        }
+    });
+});
+</script>

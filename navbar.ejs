@@ -1,0 +1,502 @@
+<!-- Navigation Menu -->
+<nav class="navbar navbar-expand-lg" style="background: linear-gradient(135deg, var(--deep-blue), #2563eb); box-shadow: 0 4px 20px rgba(30, 64, 175, 0.2);">
+    <div class="container">
+        <!-- Mobile Menu Toggle -->
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" style="color: white;">
+            <span class="navbar-toggler-icon">
+                <i class="fas fa-bars text-white"></i>
+            </span>
+        </button>
+        
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <!-- Home -->
+                <li class="nav-item">
+                    <a class="nav-link <%= page === 'home' ? 'active' : '' %>" href="/">
+                        <i class="fas fa-home me-1"></i>
+                        Home
+                    </a>
+                </li>
+                
+                <!-- About Us -->
+                <li class="nav-item">
+                    <a class="nav-link <%= page === 'about' ? 'active' : '' %>" href="/about">
+                        <i class="fas fa-info-circle me-1"></i>
+                        About Us
+                    </a>
+                </li>
+                
+                <!-- Services - NEW ADDITION -->
+                <li class="nav-item">
+                    <a class="nav-link <%= page === 'services' ? 'active' : '' %>" href="/services">
+                        <i class="fas fa-cogs me-1"></i>
+                        Services
+                    </a>
+                </li>
+                
+                <!-- Tech Subjects Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        <i class="fas fa-code me-1"></i>
+                        Tech Skills
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/subjects/web-development"><i class="fas fa-globe me-2"></i>Web Development</a></li>
+                        <li><a class="dropdown-item" href="/subjects/app-development"><i class="fas fa-mobile-alt me-2"></i>App Development</a></li>
+                        <li><a class="dropdown-item" href="/subjects/artificial-intelligence"><i class="fas fa-robot me-2"></i>Artificial Intelligence</a></li>
+                        <li><a class="dropdown-item" href="/subjects/python-programming"><i class="fab fa-python me-2"></i>Python Programming</a></li>
+                        <li><a class="dropdown-item" href="/subjects/data-science"><i class="fas fa-chart-line me-2"></i>Data Science</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="/subjects/software-engineering"><i class="fas fa-cogs me-2"></i>Software Engineering</a></li>
+                        <li><a class="dropdown-item" href="/subjects/database-management"><i class="fas fa-database me-2"></i>Database Management</a></li>
+                        <li><a class="dropdown-item" href="/subjects/cybersecurity"><i class="fas fa-shield-alt me-2"></i>Cybersecurity</a></li>
+                        <li><a class="dropdown-item" href="/subjects/cloud-computing"><i class="fas fa-cloud me-2"></i>Cloud Computing</a></li>
+                        <li><a class="dropdown-item" href="/subjects/devops"><i class="fas fa-tools me-2"></i>DevOps & Deployment</a></li>
+                    </ul>
+                </li>
+                
+                <!-- Tech Areas Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        <i class="fas fa-map-marker-alt me-1"></i>
+                        Areas
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/areas/banjara-hills">Banjara Hills</a></li>
+                        <li><a class="dropdown-item" href="/areas/jubilee-hills">Jubilee Hills</a></li>
+                        <li><a class="dropdown-item" href="/areas/hitech-city">Hitech City</a></li>
+                        <li><a class="dropdown-item" href="/areas/gachibowli">Gachibowli</a></li>
+                        <li><a class="dropdown-item" href="/areas/madhapur">Madhapur</a></li>
+                        <li><a class="dropdown-item" href="/areas/secunderabad">Secunderabad</a></li>
+                        <li><a class="dropdown-item" href="/areas/kukatpally">Kukatpally</a></li>
+                        <li><a class="dropdown-item" href="/areas/miyapur">Miyapur</a></li>
+                        <li><a class="dropdown-item" href="/areas/ameerpet">Ameerpet</a></li>
+                        <li><a class="dropdown-item" href="/areas/begumpet">Begumpet</a></li>
+                    </ul>
+                </li>
+                
+                <!-- Tech Mentors -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        <i class="fas fa-user-graduate me-1"></i>
+                        Tech Mentors
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/mentors/find"><i class="fas fa-search me-2"></i>Find a Mentor</a></li>
+                        <li><a class="dropdown-item" href="/mentors/register"><i class="fas fa-user-plus me-2"></i>Become a Mentor</a></li>
+                        <li><a class="dropdown-item" href="/mentors/frontend"><i class="fab fa-html5 me-2"></i>Frontend Developers</a></li>
+                        <li><a class="dropdown-item" href="/mentors/backend"><i class="fas fa-server me-2"></i>Backend Developers</a></li>
+                        <li><a class="dropdown-item" href="/mentors/fullstack"><i class="fas fa-layer-group me-2"></i>Full-Stack Developers</a></li>
+                        <li><a class="dropdown-item" href="/mentors/ai-ml"><i class="fas fa-brain me-2"></i>AI/ML Experts</a></li>
+                        <li><a class="dropdown-item" href="/mentors/data-science"><i class="fas fa-chart-bar me-2"></i>Data Scientists</a></li>
+                        <li><a class="dropdown-item" href="/mentors/online"><i class="fas fa-video me-2"></i>Online Sessions</a></li>
+                    </ul>
+                </li>
+                
+                <!-- Contact -->
+                <li class="nav-item">
+                    <a class="nav-link <%= page === 'contact' ? 'active' : '' %>" href="/contact">
+                        <i class="fas fa-phone me-1"></i>
+                        Contact
+                    </a>
+                </li>
+                
+                <!-- Blog -->
+                <li class="nav-item">
+                    <a class="nav-link <%= page === 'blog' ? 'active' : '' %>" href="/blog">
+                        <i class="fas fa-blog me-1"></i>
+                        Blog
+                    </a>
+                </li>
+            </ul>
+            
+            <!-- Right Side Actions -->
+            <div class="navbar-nav ms-auto d-flex flex-row">
+                <a href="/emergency-mentor" class="btn btn-sm me-2" style="background: var(--primary-saffron); color: white; border: none; animation: pulse 2s infinite;">
+                    <i class="fas fa-bolt me-1"></i>
+                    Urgent Help
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<style>
+/* Navigation Styles */
+.navbar-nav .nav-link {
+    color: white !important;
+    font-weight: 500;
+    padding: 0.75rem 1rem !important;
+    margin: 0 0.2rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.navbar-nav .nav-link:hover {
+    background: rgba(255, 153, 51, 0.2);
+    color: var(--light-saffron) !important;
+    transform: translateY(-2px);
+}
+
+.navbar-nav .nav-link.active {
+    background: var(--primary-saffron);
+    color: white !important;
+    box-shadow: 0 4px 12px rgba(255, 153, 51, 0.3);
+}
+
+.navbar-nav .nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 3px;
+    background: var(--light-saffron);
+    border-radius: 2px;
+}
+
+/* Dropdown Styles */
+.dropdown-menu {
+    background: white;
+    border: none;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    padding: 0.5rem 0;
+    margin-top: 0.5rem;
+}
+
+.dropdown-item {
+    color: var(--dark-gray);
+    padding: 0.6rem 1.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background: var(--pale-saffron);
+    color: var(--primary-saffron);
+    transform: translateX(5px);
+}
+
+.dropdown-item i {
+    color: var(--primary-saffron);
+    width: 18px;
+}
+
+/* Emergency Button Animation */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 153, 51, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(255, 153, 51, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 153, 51, 0);
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 991px) {
+    .navbar-nav {
+        padding-top: 1rem;
+    }
+    
+    .navbar-nav .nav-link {
+        margin: 0.2rem 0;
+        text-align: center;
+    }
+    
+    .navbar-nav .ms-auto {
+        justify-content: center;
+        margin-top: 1rem;
+    }
+    
+    .dropdown-menu {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+    }
+}
+
+/* Navbar Toggler */
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler-icon i {
+    font-size: 1.2rem;
+}
+
+/* Smooth Dropdown */
+.dropdown-menu {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+}
+
+@media (min-width: 992px) {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+<!-- Navigation Menu -->
+<!-- <nav class="navbar navbar-expand-lg" style="background: linear-gradient(135deg, var(--deep-blue), #2563eb); box-shadow: 0 4px 20px rgba(30, 64, 175, 0.2);">
+    <div class="container"> -->
+        <!-- Mobile Menu Toggle -->
+        <!-- <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" style="color: white;">
+            <span class="navbar-toggler-icon">
+                <i class="fas fa-bars text-white"></i>
+            </span>
+        </button> -->
+        
+        <!-- Navigation Links -->
+        <!-- <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto"> -->
+                <!-- Home -->
+                <!-- <li class="nav-item">
+                    <a class="nav-link <%= page === 'home' ? 'active' : '' %>" href="/">
+                        <i class="fas fa-home me-1"></i>
+                        Home
+                    </a>
+                </li> -->
+                
+                <!-- About Us -->
+                <!-- <li class="nav-item">
+                    <a class="nav-link <%= page === 'about' ? 'active' : '' %>" href="/about">
+                        <i class="fas fa-info-circle me-1"></i>
+                        About Us
+                    </a>
+                </li> -->
+                
+                <!-- Subjects Dropdown -->
+                <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        <i class="fas fa-book me-1"></i>
+                        Subjects
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/subjects/o-levels"><i class="fas fa-graduation-cap me-2"></i>O-Levels</a></li>
+                        <li><a class="dropdown-item" href="/subjects/a-levels"><i class="fas fa-university me-2"></i>A-Levels</a></li>
+                        <li><a class="dropdown-item" href="/subjects/cambridge"><i class="fas fa-certificate me-2"></i>Cambridge</a></li>
+                        <li><a class="dropdown-item" href="/subjects/matric"><i class="fas fa-school me-2"></i>Matriculation</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="/subjects/mathematics"><i class="fas fa-calculator me-2"></i>Mathematics</a></li>
+                        <li><a class="dropdown-item" href="/subjects/physics"><i class="fas fa-atom me-2"></i>Physics</a></li>
+                        <li><a class="dropdown-item" href="/subjects/chemistry"><i class="fas fa-flask me-2"></i>Chemistry</a></li>
+                        <li><a class="dropdown-item" href="/subjects/english"><i class="fas fa-language me-2"></i>English</a></li>
+                        <li><a class="dropdown-item" href="/subjects/biology"><i class="fas fa-dna me-2"></i>Biology</a></li>
+                    </ul>
+                </li>
+                 -->
+                <!-- Areas Dropdown -->
+                <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        <i class="fas fa-map-marker-alt me-1"></i>
+                        Areas
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/areas/banjara-hills">Banjara Hills</a></li>
+                        <li><a class="dropdown-item" href="/areas/jubilee-hills">Jubilee Hills</a></li>
+                        <li><a class="dropdown-item" href="/areas/hitech-city">Hitech City</a></li>
+                        <li><a class="dropdown-item" href="/areas/gachibowli">Gachibowli</a></li>
+                        <li><a class="dropdown-item" href="/areas/madhapur">Madhapur</a></li>
+                        <li><a class="dropdown-item" href="/areas/secunderabad">Secunderabad</a></li>
+                        <li><a class="dropdown-item" href="/areas/kukatpally">Kukatpally</a></li>
+                        <li><a class="dropdown-item" href="/areas/miyapur">Miyapur</a></li>
+                        <li><a class="dropdown-item" href="/areas/ameerpet">Ameerpet</a></li>
+                        <li><a class="dropdown-item" href="/areas/begumpet">Begumpet</a></li>
+                    </ul>
+                </li>
+                 -->
+                <!-- Tutors -->
+                <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        <i class="fas fa-chalkboard-teacher me-1"></i>
+                        Tutors
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/tutors/find"><i class="fas fa-search me-2"></i>Find a Tutor</a></li>
+                        <li><a class="dropdown-item" href="/tutors/register"><i class="fas fa-user-plus me-2"></i>Become a Tutor</a></li>
+                        <li><a class="dropdown-item" href="/tutors/male"><i class="fas fa-mars me-2"></i>Male Tutors</a></li>
+                        <li><a class="dropdown-item" href="/tutors/female"><i class="fas fa-venus me-2"></i>Female Tutors</a></li>
+                        <li><a class="dropdown-item" href="/tutors/online"><i class="fas fa-laptop me-2"></i>Online Tutors</a></li>
+                    </ul>
+                </li>
+                 -->
+                <!-- Contact -->
+                <!-- <li class="nav-item">
+                    <a class="nav-link <%= page === 'contact' ? 'active' : '' %>" href="/contact">
+                        <i class="fas fa-phone me-1"></i>
+                        Contact
+                    </a>
+                </li> -->
+                
+                <!-- Blog -->
+                <!-- <li class="nav-item">
+                    <a class="nav-link <%= page === 'blog' ? 'active' : '' %>" href="/blog">
+                        <i class="fas fa-blog me-1"></i>
+                        Blog
+                    </a>
+                </li>
+            </ul> -->
+            
+            <!-- Right Side Actions -->
+            <!-- <div class="navbar-nav ms-auto d-flex flex-row">
+                <a href="/emergency-tutor" class="btn btn-sm me-2" style="background: var(--primary-saffron); color: white; border: none; animation: pulse 2s infinite;">
+                    <i class="fas fa-bolt me-1"></i>
+                    Emergency Tutor
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+ -->
+ <style>
+/* Navigation Styles */
+/* .navbar-nav .nav-link {
+    color: white !important;
+    font-weight: 500;
+    padding: 0.75rem 1rem !important;
+    margin: 0 0.2rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.navbar-nav .nav-link:hover {
+    background: rgba(255, 153, 51, 0.2);
+    color: var(--light-saffron) !important;
+    transform: translateY(-2px);
+}
+
+.navbar-nav .nav-link.active {
+    background: var(--primary-saffron);
+    color: white !important;
+    box-shadow: 0 4px 12px rgba(255, 153, 51, 0.3);
+}
+
+.navbar-nav .nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 3px;
+    background: var(--light-saffron);
+    border-radius: 2px;
+} */
+
+/* Dropdown Styles */
+/* .dropdown-menu {
+    background: white;
+    border: none;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    padding: 0.5rem 0;
+    margin-top: 0.5rem;
+}
+
+.dropdown-item {
+    color: var(--dark-gray);
+    padding: 0.6rem 1.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background: var(--pale-saffron);
+    color: var(--primary-saffron);
+    transform: translateX(5px);
+}
+
+.dropdown-item i {
+    color: var(--primary-saffron);
+    width: 18px;
+} */
+
+/* Emergency Button Animation */
+/* @keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 153, 51, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(255, 153, 51, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 153, 51, 0);
+    }
+} */
+
+/* Mobile Responsive */
+/* @media (max-width: 991px) {
+    .navbar-nav {
+        padding-top: 1rem;
+    }
+    
+    .navbar-nav .nav-link {
+        margin: 0.2rem 0;
+        text-align: center;
+    }
+    
+    .navbar-nav .ms-auto {
+        justify-content: center;
+        margin-top: 1rem;
+    }
+    
+    .dropdown-menu {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+    }
+} */
+
+/* Navbar Toggler */
+/* .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler-icon i {
+    font-size: 1.2rem;
+} */
+
+/* Smooth Dropdown */
+/* .dropdown-menu {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+}
+
+@media (min-width: 992px) {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+}
+</style> */
